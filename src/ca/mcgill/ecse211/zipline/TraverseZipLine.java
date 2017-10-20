@@ -12,7 +12,7 @@ public class TraverseZipLine {
 	  private Odometer odometer;
 	  private SampleProvider colorSensor;
 	  private float[] colorData;
-	  private static double lightDensity = 0.05;
+	  private static double lightDensity = 0.005;
 	  private double originalX;
 	  private double originalY;
 	  private double originalTheta;
@@ -47,7 +47,7 @@ public class TraverseZipLine {
 	    ZipLineLab.rightMotor.rotate(convertDistance(ZipLineLab.WHEEL_RADIUS, 20), false);
 	    
 	    ZipLineLab.pulleyMotor.setSpeed(FORWARD_SPEED);
-	    ZipLineLab.pulleyMotor.forward();
+	    ZipLineLab.pulleyMotor.backward();
 	    
 	    ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED);
 		ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED);
@@ -82,7 +82,7 @@ public class TraverseZipLine {
 		
 		ZipLineLab.rightMotor.forward();
 		ZipLineLab.leftMotor.forward();
-		ZipLineLab.pulleyMotor.forward();
+		ZipLineLab.pulleyMotor.backward();
 		while(getColorData() <0.3){
 			
 		} try{

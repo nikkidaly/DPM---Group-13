@@ -14,6 +14,7 @@ import lejos.robotics.SampleProvider;
 
 public class Navigation implements UltrasonicController {
 	  private static final int FORWARD_SPEED = 250;
+	  private static final int FORWARD_SPEED_LEFT = 275;
 	  private static final int ROTATE_SPEED = 50;
 	  private static final double tileLength = 30.48;
 	  
@@ -96,7 +97,7 @@ public class Navigation implements UltrasonicController {
 ////		    		ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////		    		ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, -90), true);  
 ////		    		ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, -90), false); 
-////		    		ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////		    		ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////		    		ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 30), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 30), false);
@@ -105,7 +106,7 @@ public class Navigation implements UltrasonicController {
 ////                	ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////                	ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, 90),true);  
 ////                	ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, 90),false); 
-////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////                	ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 45), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 45), false);
@@ -114,7 +115,7 @@ public class Navigation implements UltrasonicController {
 ////                	ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////                	ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, 90),true);  
 ////                	ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, 90),false); 
-////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////                	ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 30), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 30), false);
@@ -131,7 +132,7 @@ public class Navigation implements UltrasonicController {
 ////		    		ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////		    		ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, 90), true);  
 ////		    		ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, 90), false); 
-////		    		ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////		    		ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////		    		ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 30), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 30), false);
@@ -140,7 +141,7 @@ public class Navigation implements UltrasonicController {
 ////                	ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////                	ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, -90),true);  
 ////                	ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, -90),false); 
-////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////                	ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 50), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 50), false);
@@ -149,7 +150,7 @@ public class Navigation implements UltrasonicController {
 ////                	ZipLineLab.rightMotor.setSpeed(ROTATE_SPEED);
 ////                	ZipLineLab.leftMotor.rotate(convertAngle(leftRadius, width, -90),true);  
 ////                	ZipLineLab.rightMotor.rotate(-convertAngle(rightRadius, width, -90),false); 
-////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED); 
+////                	ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT); 
 ////                	ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED); 
 ////                	ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, 30), true);  
 ////                	ZipLineLab.rightMotor.rotate(convertDistance(rightRadius, 30), false);
@@ -174,7 +175,7 @@ public class Navigation implements UltrasonicController {
 		    	turnTo(270,odometer,leftRadius,rightRadius,width);
 		    }
 		    
-		    ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED);
+		    ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT);
 		    ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED);
 
 		    ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, Math.abs(xDistance)), true);
@@ -196,7 +197,7 @@ public class Navigation implements UltrasonicController {
 		    	turnTo(180,odometer,leftRadius,rightRadius,width);
 		    }
 		    
-		    ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED);
+		    ZipLineLab.leftMotor.setSpeed(FORWARD_SPEED_LEFT);
 		    ZipLineLab.rightMotor.setSpeed(FORWARD_SPEED);
 
 		    ZipLineLab.leftMotor.rotate(convertDistance(leftRadius, Math.abs(yDistance)), true);
